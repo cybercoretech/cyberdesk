@@ -15,7 +15,7 @@ use std::{convert::Infallible, time::Duration};
 use crate::{blueprints, git, lint, render, theme, vault, AppState};
 
 /// GitHub page for the app's own source.
-const REPO_URL: &str = "https://github.com/cybercore-tech/cyberdesk";
+const REPO_URL: &str = "https://github.com/cybercoretech/cyberdesk";
 
 /// Pull one cookie value out of the `Cookie:` header.
 fn cookie(headers: &HeaderMap, name: &str) -> Option<String> {
@@ -74,7 +74,7 @@ fn repo_info(root: &std::path::Path) -> (Option<String>, Vec<String>) {
     let detected = git::head_info(root).1;
     let mut choices = vec![
         "https://github.com/darkstardevx/darknotes".to_string(),
-        "https://github.com/cybercore-tech/cyberdesk".to_string(),
+        "https://github.com/cybercoretech/cyberdesk".to_string(),
     ];
     if let Some(w) = &detected {
         if !choices.contains(w) {

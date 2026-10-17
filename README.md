@@ -47,7 +47,7 @@ directory (`$XDG_CONFIG_HOME/cybercore`, or `~/.config/cybercore`). The app's
 theme picker includes built-in and custom catalog entries, and its sidebar
 links to the standalone Theme Studio at `http://127.0.0.1:8761/`. Start it
 from a Cybercore checkout with `cargo run -p cybercore-theme-studio`. See the
-[Cybercore theme engine guide](https://github.com/cybercore-tech/cybercore/blob/main/docs/theme-engine.md)
+[Cybercore theme engine guide](https://github.com/cybercoretech/cybercore/blob/main/docs/theme-engine.md)
 for the portable JSON format and storage contract.
 Open Cyberdesk pages receive server-sent theme change events and update the
 shared palette and appearance without a reload. Installing or removing
